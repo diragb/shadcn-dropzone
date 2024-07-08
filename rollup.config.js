@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { terser } from 'rollup-plugin-terser';
+import replace from '@rollup/plugin-replace';
 import pkg from './package.json';
 
 export default {
@@ -20,6 +21,15 @@ export default {
       exports: 'named',
       sourcemap: true,
     },
+    {
+      file: 'dist/index.umd.js',
+      format: 'umd',
+      name: 'Dropzone',
+      globals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+      },
+    },
   ],
   plugins: [
     peerDepsExternal(),
@@ -29,7 +39,11 @@ export default {
       tsconfig: './tsconfig.json',
       clean: true,
     }),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('development'),
+      preventAssignment: true,
+    }),
     terser(),
   ],
-  external: ['react', 'react-dom', 'lucide-react'],
+  external: ['react', 'react-dom'],
 };
