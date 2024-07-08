@@ -17,6 +17,7 @@ export interface DropzoneProps extends Omit<_DropzoneProps, 'children'> {
 }
 
 // Imports:
+import '@/styles/globals.css'
 import { Upload } from 'lucide-react'
 
 // Functions:
