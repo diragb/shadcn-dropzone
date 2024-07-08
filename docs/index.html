@@ -1,0 +1,56 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Shadcn Dropzone</title>
+    <meta
+      content="Ready to use File Upload Dropzone component, built with shadcn/ui and react-dropzone."
+      name="description">
+    <meta content="Shadcn Dropzone" property="og:title">
+    <meta
+      content="Ready to use File Upload Dropzone component, built with shadcn/ui and react-dropzone"
+      property="og:description">
+    <meta content="https://diragb.github.io/shadcn-dropzone/seo-card.png"
+      property="og:image">
+    <meta content="Shadcn Dropzone" property="twitter:title">
+    <meta
+      content="Ready to use File Upload Dropzone component, built with shadcn/ui and react-dropzone"
+      property="twitter:description">
+    <meta content="https://diragb.github.io/shadcn-dropzone/seo-card.png"
+      property="twitter:image">
+    <meta property="og:type" content="website">
+    <meta content="summary_large_image" name="twitter:card">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- React and ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX support -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Your component (update the version as needed) -->
+    <script src="https://unpkg.com/shadcn-dropzone@latest/dist/index.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const { Dropzone } = Dropzone;
+
+      function App() {
+        return (
+          <div className="flex justify-center items-center flex-col gap-4 w-screen h-screen">
+            <h1 className="text-2xl font-bold mb-4">Shadcn Dropzone</h1>
+            <Dropzone />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+  </body>
+</html>

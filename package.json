@@ -1,0 +1,64 @@
+{
+  "name": "shadcn-dropzone",
+  "version": "0.1.0",
+  "description": "Ready to use File Upload Dropzone component, built with shadcn/ui and react-dropzone.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "author": "Dirag Biswas (https://github.com/diragb)",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/diragb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diragb/shadcn-dropzone"
+  },
+  "bugs": {
+    "url": "https://github.com/diragb/shadcn-dropzone/issues"
+  },
+  "homepage": "https://github.com/diragb/shadcn-dropzone#readme",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "rollup": "^2.79.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "lucide-react": "^0.403.0",
+    "react-dropzone": "^14.2.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "keywords": [
+    "shadcn",
+    "tailwind",
+    "react",
+    "drag",
+    "drop",
+    "upload",
+    "typescript"
+  ],
+  "license": "MIT"
+}
