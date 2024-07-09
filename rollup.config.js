@@ -45,5 +45,5 @@ export default {
     }),
     terser(),
   ],
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom', 'lucide-react'],
 };
