@@ -55,8 +55,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "keywords": [
-    "shadcn",
-    "tailwind",
+    "shadcn-ui",
+    "tailwindcss",
     "react",
     "drag",
     "drop",
