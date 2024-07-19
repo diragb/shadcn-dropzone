@@ -1,6 +1,6 @@
 {
   "name": "shadcn-dropzone",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Ready to use File Upload Dropzone component, built with shadcn/ui and react-dropzone.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -49,10 +49,10 @@
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.403.0",
     "react-dropzone": "^14.2.3",
     "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "truncate": "^3.0.0"
   },
   "keywords": [
     "shadcn-ui",

@@ -7,7 +7,7 @@ import replace from '@rollup/plugin-replace';
 import pkg from './package.json';
 
 export default {
-  input: 'src/index.tsx',
+  input: 'src',
   output: [
     {
       file: pkg.main,
@@ -33,11 +33,15 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    resolve(),
+    resolve({
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs', '.mts'],
+    }),
     commonjs(),
     typescript({
       tsconfig: './tsconfig.json',
       clean: true,
+      declaration: true,
+      declarationDir: 'dist',
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('development'),
@@ -45,5 +49,8 @@ export default {
     }),
     terser(),
   ],
-  external: ['react', 'react-dom', 'lucide-react'],
+  external: [
+    'react',
+    'react-dom',
+  ],
 };

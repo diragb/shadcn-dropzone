@@ -63,7 +63,7 @@ const CustomUI = () => {
 }
 ```
 
-Make sure you have shadcn/ui and TailwindCSS set up in your project, as this component relies on them.
+Make sure you have TailwindCSS set up in your project, as this component relies on them.
 
 ## Props
 
