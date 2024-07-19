@@ -1,5 +1,10 @@
 # Shadcn Dropzone
 
+[![npm](https://img.shields.io/badge/npm-shadcn--dropzone-brightgreen.svg?style=flat-square)](https://www.npmjs.com/package/shadcn-dropzone)
+[![npm version](https://img.shields.io/npm/v/shadcn-dropzone.svg?style=flat-square)](https://www.npmjs.com/package/shadcn-dropzone)
+[![npm downloads](https://img.shields.io/npm/dm/shadcn-dropzone.svg?style=flat-square)](https://www.npmjs.com/package/shadcn-dropzone)
+[![sponsors](https://img.shields.io/github/sponsors/diragb)](https://github.com/sponsors/diragb)
+
 Ready to use File Upload Dropzone component, built with **[shadcn/ui](http://ui.shadcn.com)** and **[react-dropzone](https://www.npmjs.com/package/react-dropzone)**.
 
 **Demo:** https://diragb.github.io/shadcn-dropzone
