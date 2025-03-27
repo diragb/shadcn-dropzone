@@ -30,7 +30,7 @@ import Dropzone from 'shadcn-dropzone';
 const DefaultUI = () => {
   return (
     <Dropzone
-      onDrop={(acceptedFiles: File) => {
+      onDrop={(acceptedFiles: File[]) => {
         // Do something with the files
       }}
     />
@@ -41,7 +41,7 @@ const DefaultUI = () => {
 const CustomUI = () => {
   return (
     <Dropzone
-      onDrop={(acceptedFiles: File) => {
+      onDrop={(acceptedFiles: File[]) => {
         // Do something with the files
       }}
     >
